@@ -19,7 +19,7 @@
 			html.style {
 				cursor:wait;
 			}
-			button#countdown-button {
+			button.na {
 				cursor:not-allowed;
 			}
 			/*
@@ -178,6 +178,8 @@
 				$("#countdown-button-link").attr("href", "https://bannerproxy.github.io");
 				// Removes the class style in html tag after countdown
 				$( "html" ).removeClass( "style" );
+				// Removes the class cursor in button after the countdown
+				$( "button" ).removeClass( "na" );
 			}, 7000);
 			// Adds a button to the page using jquery
 			/* setTimeout(function(){
@@ -193,7 +195,7 @@
 			<!--<p class="small"><div style="word-wrap: none; font-size: 13px;" id="fountainTextG">Redirecting to the new BannerBombProxy<div id="fountainTextG_1" class="fountainTextG">.</div><div id="fountainTextG_2" class="fountainTextG">.</div><div id="fountainTextG_3" class="fountainTextG">.</div></div></p>-->
 			<p class="small"><div style="word-wrap: none; font-size: 13px;" id="">Redirecting to the new BannerBombProxy</p>
 		<br>
-		<p class="small">If you are not automatically redirected <a href="javascript:;" id="countdown-button-link"><button id="countdown-button" disabled><div class="countdown" id="countdown" style="width: 60px;">6</div></button></a></p>
+		<p class="small">If you are not automatically redirected <a href="javascript:;" id="countdown-button-link"><button id="countdown-button" class="na" disabled><div class="countdown" id="countdown" style="width: 60px;">6</div></button></a></p>
 		</center>
 	</body>
 </html>
